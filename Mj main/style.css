@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --mj-main-color: #ffc107;
+  }
+
 body {
     background-color: #f1f1f2;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -16,7 +20,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ffc107;
+    color: var(--mj-main-color);
 }
 
 .nav-pills .nav-item .nav-link {
@@ -31,7 +35,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #ffc107; 
+    background-color: var(--mj-main-color); 
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -139,14 +143,14 @@ body {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #ffc107;
+    background-color: var(--mj-main-color);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
 }
 
 .quick-link:hover {
-    color: #ffc107 !important;
+    color: var(--mj-main-color) !important;
 }
 
 .quick-link:hover::after {
@@ -183,5 +187,5 @@ body {
 .social-icon:hover::after {
     width: 40px;
     height: 40px;
-    border-color: #ffc107;
+    border-color: var(--mj-main-color);
 }
